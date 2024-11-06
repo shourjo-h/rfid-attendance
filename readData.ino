@@ -10,13 +10,13 @@ LiquidCrystal_I2C lcd(0x27, 16, 2);
 
 //---------------------------------------------------------------------------------------------------------
 // Enter Google Script Deployment ID:
-const char *GScriptId = "deployment";
-String gate_number = "loc"; // Location of the machine, you can use multiple
+const char *GScriptId = "DEPLOYMENT_ID";
+String gate_number = "LOCATION"; // Location of the machine, you can use multiple
 
 //---------------------------------------------------------------------------------------------------------
 // Enter network credentials:
-const char* ssid     = "ssid";
-const char* password = "pass";
+const char* ssid     = "WIFI_NAME";
+const char* password = "PASSWORD";
 
 //---------------------------------------------------------------------------------------------------------
 String payload_base =  "{\"command\": \"insert_row\", \"sheet_name\": \"Sheet1\", \"values\": ";
